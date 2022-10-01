@@ -6,36 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Historia Clínica</title>
   <link rel="stylesheet" href="Historia.css">
+
 </head>
 <body>
   <div class="tab-container">
+    <ul class="top">
+      <li id="arriba" class="top">Name paciente</li>
     <ul class="options">
-        <li id="option1" class="option 
-        option-active">Option1</li>
-        <li id="option2"class="option">Option2</li>
+        <li id="option1" class="option option-active">Datos Personales</li>
+        <li id="option2"class="option">Antecedentes</li>
+        <li id="option3" class="option">Exámen Físico</li> 
+        
+        
     </ul>
 
     <div class="contents">
         <div id="content1" class="content content-active">
-          <h3>Option 1</h3>
+          <h3></h3>
           <form>
-            <label for="name">Nombre </label>
-            <input id="name" type="text" name="nam">
+            <input class="controls" type="text" name="Cédula" id="Cédula" placeholder="Número de Documento"/> 
+            <input class="controls" type="text" name="Nombres" id="Nombres" placeholder="Nombres"/> 
+            <input class="controls" type="text" name="Apellidos" id="Apellidos" placeholder="Apellidos"/>
+            <input class="controls" type="text" name="Género" id="Genero" placeholder="Género"/>
+            <input class="controls" type="text" name="Celular" id="NumCel" placeholder="Número de Celular"/>
+            <input class="controls" type="text" name="Telefono" id="Tel" placeholder="Número de Telefono"/>
+            <input class="controls" type="text" name="Direccion" id="Dir" placeholder="Dirección"/>
+            <input class="controls" type="text" name="Ciudad" id="Ciu" placeholder="Cuidad"/>
+            <input class="controls" type="text" name="Departamento" id="Gdepa" placeholder="Departamento"/>
+            <input class="controls" type="text" Email="Correo" id="correo" placeholder="Correo electrónico"/>
+            <input class="controls" type="text" name="CedulaFliar" id="Fliar" placeholder="Nombre Familiar encargado"/>
           </form>
 
         </div>
 
         <div id="content2" class="content">
-          <h3>Option 2</h3>
-          <form>
-            <label for="name">Apellido </label>
-            <input id="name" type="text" name="nam">
+          <form1>
+          <div>
+            <label class="lab"for="name">Médicos:  </label>
+            <input class="bot" id="name" type="text" name="nam" >
+            <label class="lab" for="name">Quirurgicos:  </label>
+            <input class="bot"id="nam" type="text" name="name">
+          </div>
+          <div>
+            <label class="lab" for="name">Transfusionales:  </label>
+            <input class="bot"id="na" type="text" name="nai">
+            <label class="lab"for="name">Inmunológicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
+          <div>
+            <label class="lab"for="name">Alérgicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+            <label class="lab"for="name">Traumáticos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
+          <div>
+            <label class="lab"for="name">Psicológicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+            <label class="lab"for="name">Farmacológicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
+          <div>
+            <label class="lab"for="name">Vacunación:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+            <label class="lab"for="name">Familiares:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
+          <div>
+            <label class="lab"for="name">tóxicos:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+            <label class="lab"for="name">Otros:  </label>
+            <input class="bot"id="name" type="text" name="nam">
+          </div>
           </form>
-
         </div> 
+        <div id="content3" class="content">
+          <form>
+            <div>
+              <p>comentario: <textarea name="comentario"></textarea></p>
+          </form>
+        </div>
+
+
     </div>
 
   <div>
-  
+<script  src="Historia.js"></script>  
 </body>
 </html>

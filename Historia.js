@@ -1,13 +1,16 @@
 const option1 = document.getElementById('option1')
 const option2 = document.getElementById('option2')
+const option3 = document.getElementById('option3')
 const content1 = document.getElementById('content1')
 const content2 = document.getElementById('content2')
+const content3 = document.getElementById('content3')
+
 
 let choose = 1
 
 const changeOption = () => {
     choose == 1 ? (
-        option1.classList.value ='content option-active',
+        option1.classList.value ='option option-active',
         content1.classList.value='content content-active'
     )
     :(
@@ -23,6 +26,15 @@ const changeOption = () => {
         option2.classList.value ='option',
         content2.classList.value='content' 
     )
+
+    choose == 3 ? (
+        option3.classList.value ='option option-active',
+        content3.classList.value='content content-active'
+    )
+    :(
+        option3.classList.value ='option',
+        content3.classList.value='content' 
+    )
 }
 
 option1.addEventListener('click', ()=>{
@@ -32,6 +44,10 @@ option1.addEventListener('click', ()=>{
 
 option2.addEventListener('click', ()=>{
     choose = 2
+    changeOption()
+})
+option3.addEventListener('click', ()=>{
+    choose = 3
     changeOption()
 })
     
